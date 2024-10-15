@@ -1,15 +1,15 @@
 // MODUL_7
 //Задание 7.1.1
 
-function printInfo() {
- console.log("Name: " + this.name + ", Age: " + this.age);
+function printInfo(name, age) {
+ console.log("Name: " + name + ", Age: " + age);
 }
 
-  const Person = {
+  const person = {
     name: "Lev",
     age: 30
   };
-  printInfo.call(Person);
+  printInfo(person.name, person.age);
 
 //Задание 7.7.2
 
@@ -46,7 +46,7 @@ console.log(nameOfUserOver18);
 function setFullName(newName) {
   this.FullName = newName;
 }
-let person = {
+let person2 = {
   firstName: "Jhon",
   lastName: "Smith",
 };
